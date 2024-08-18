@@ -48,4 +48,4 @@ colcon build --symlink-install
 
 [Subscriber with type adapter](https://github.com/ytam1208/ros2_tutorial/blob/main/src/cpp_pubsub/src/subscriber/member_function_with_type_adapter.cpp)
 
-[Subscriber with wait set]()
+[Subscriber with wait set](https://github.com/ytam1208/ros2_tutorial/blob/main/src/cpp_pubsub/src/subscriber/member_function_wait_set.cpp)

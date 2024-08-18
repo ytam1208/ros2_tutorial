@@ -1,5 +1,8 @@
-.vscode
-/build
-/install
-/log
+.vscode/
+build/
+install/
+log/
+
+src/CMakeLists.txt
+*.sw*
 
