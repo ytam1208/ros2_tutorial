@@ -1,8 +1,9 @@
 .vscode/
+
 build/
+
 install/
+
 log/
 
-src/CMakeLists.txt
-*.sw*
 
