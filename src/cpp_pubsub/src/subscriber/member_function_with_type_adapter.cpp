@@ -8,7 +8,7 @@
 #include "std_msgs/msg/string.hpp"
 
 template<>
-struct rclcpp::Type::TypeAdapter<std::string, std_msgs::msg::String>
+struct rclcpp::TypeAdapter<std::string, std_msgs::msg::String>
 {
     using is_specialized = std::true_type;
     using custom_type = std::string;
@@ -33,7 +33,7 @@ public:
     MinimalSubscriber() : Node("minimal_subscriber")
     {
         subscription_ = this->create_subscription<MyAdaptedType>(
-            "topic", 1, std::bind(&MinimalSubscriber::topic_callback, this, std::placeholders::_1);
+            "topic", 1, std::bind(&MinimalSubscriber::topic_callback, this, std::placeholders::_1)
         );
     }
 private:

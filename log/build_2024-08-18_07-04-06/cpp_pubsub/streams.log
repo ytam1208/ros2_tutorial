@@ -1,0 +1,61 @@
+[0.025s] Invoking command in '/home/tm/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/tm/ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/tm/ros2_ws/install/cpp_pubsub
+[0.175s] -- The C compiler identification is GNU 11.4.0
+[0.255s] -- The CXX compiler identification is GNU 11.4.0
+[0.265s] -- Detecting C compiler ABI info
+[0.320s] -- Detecting C compiler ABI info - done
+[0.325s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.325s] -- Detecting C compile features
+[0.326s] -- Detecting C compile features - done
+[0.330s] -- Detecting CXX compiler ABI info
+[0.386s] -- Detecting CXX compiler ABI info - done
+[0.391s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.391s] -- Detecting CXX compile features
+[0.391s] -- Detecting CXX compile features - done
+[0.436s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.566s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.695s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.794s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.804s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.820s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.850s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.883s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.969s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.975s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.094s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.126s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.173s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.193s] -- Looking for pthread.h
+[1.251s] -- Looking for pthread.h - found
+[1.251s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.303s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.304s] -- Found Threads: TRUE  
+[1.432s] -- Configuring done
+[1.444s] -- Generating done
+[1.445s] -- Build files have been written to: /home/tm/ros2_ws/build/cpp_pubsub
+[1.453s] Invoked command in '/home/tm/ros2_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/tm/ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/tm/ros2_ws/install/cpp_pubsub
+[1.454s] Invoking command in '/home/tm/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tm/ros2_ws/build/cpp_pubsub -- -j6 -l6
+[1.486s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher/member_function.cpp.o[0m
+[1.486s] [ 50%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber/member_function_with_type_adapter.cpp.o[0m
+[3.422s] [01m[K/home/tm/ros2_ws/src/cpp_pubsub/src/subscriber/member_function_with_type_adapter.cpp:11:16:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::Type[m[K’ has not been declared
+[3.422s]    11 | struct rclcpp::[01;31m[KType[m[K::TypeAdapter<std::string, std_msgs::msg::String>
+[3.422s]       |                [01;31m[K^~~~[m[K
+[3.422s] [01m[K/home/tm/ros2_ws/src/cpp_pubsub/src/subscriber/member_function_with_type_adapter.cpp:11:33:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K<[m[K’ token
+[3.422s]    11 | struct rclcpp::Type::TypeAdapter[01;31m[K<[m[Kstd::string, std_msgs::msg::String>
+[3.422s]       |                                 [01;31m[K^[m[K
+[3.454s] [01m[K/home/tm/ros2_ws/src/cpp_pubsub/src/subscriber/member_function_with_type_adapter.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[3.455s] [01m[K/home/tm/ros2_ws/src/cpp_pubsub/src/subscriber/member_function_with_type_adapter.cpp:36:99:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[3.455s]    36 |             "topic", 1, std::bind(&MinimalSubscriber::topic_callback, this, std::placeholders::_1)[01;31m[K;[m[K
+[3.455s]       |                                                                                                   [01;31m[K^[m[K
+[3.455s] [01m[K/home/tm/ros2_ws/src/cpp_pubsub/src/subscriber/member_function_with_type_adapter.cpp:35:65:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[3.455s]    35 |         subscription_ = this->create_subscription<MyAdaptedType>[01;36m[K([m[K
+[3.455s]       |                                                                 [01;36m[K^[m[K
+[3.455s] [01m[K/home/tm/ros2_ws/src/cpp_pubsub/src/subscriber/member_function_with_type_adapter.cpp:37:9:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+[3.455s]    37 |         [01;31m[K)[m[K;
+[3.455s]       |         [01;31m[K^[m[K
+[3.776s] gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/subscriber/member_function_with_type_adapter.cpp.o] Error 1
+[3.776s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/listener.dir/all] Error 2
+[3.776s] gmake[1]: *** Waiting for unfinished jobs....
+[4.888s] [ 75%] [32m[1mLinking CXX executable talker[0m
+[5.070s] [ 75%] Built target talker
+[5.071s] gmake: *** [Makefile:146: all] Error 2
+[5.073s] Invoked command in '/home/tm/ros2_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tm/ros2_ws/build/cpp_pubsub -- -j6 -l6
