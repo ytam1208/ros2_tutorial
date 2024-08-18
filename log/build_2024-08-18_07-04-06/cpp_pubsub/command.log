@@ -1,4 +1,0 @@
-Invoking command in '/home/tm/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/tm/ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/tm/ros2_ws/install/cpp_pubsub
-Invoked command in '/home/tm/ros2_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/tm/ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/tm/ros2_ws/install/cpp_pubsub
-Invoking command in '/home/tm/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tm/ros2_ws/build/cpp_pubsub -- -j6 -l6
-Invoked command in '/home/tm/ros2_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tm/ros2_ws/build/cpp_pubsub -- -j6 -l6
